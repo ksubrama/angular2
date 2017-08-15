@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { data } from '../data';
 
 @Component({
   selector: 'app-video-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
+  videoList = data;
 
   constructor() { }
 
